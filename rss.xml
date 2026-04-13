@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0">
 <channel>
     <title>Mr. Alternative</title>
     <link>https://jack-tech9355.github.io/Mr-Alternatives/</link>
     <description>Mehnge apps ko chhodiye, aur in muft options ko apnaiye।</description>
     <language>hi</language>
-    <lastBuildDate>Mon, 13 Apr 2026 20:30:00 +0530</lastBuildDate>
 
     <item>
-        <title>Best Open Source YouTube Alternatives</title>
+        <title>YouTube Alternatives</title>
         <link>https://jack-tech9355.github.io/Mr-Alternatives/</link>
-        <description>NewPipe, SkyTube aur Libretube jaise बेहतरीन ऐप्स की जानकारी।</description>
-        <pubDate>Mon, 13 Apr 2026 10:00:00 +0530</pubDate>
-        <guid>https://jack-tech9355.github.io/Mr-Alternatives/post1</guid>
+        <description>NewPipe aur SkyTube jaise behtareen options।</description>
+        <guid>https://jack-tech9355.github.io/Mr-Alternatives/item1</guid>
     </item>
 
     <item>
-        <title>Top F-Droid Apps for Privacy</title>
+        <title>F-Droid Apps</title>
         <link>https://jack-tech9355.github.io/Mr-Alternatives/</link>
-        <description>Apne phone ko safe rakhne ke liye in open-source apps ka use karein।</description>
-        <pubDate>Sun, 12 Apr 2026 15:00:00 +0530</pubDate>
-        <guid>https://jack-tech9355.github.io/Mr-Alternatives/post2</guid>
+        <description>Privacy focused apps for Android।</description>
+        <guid>https://jack-tech9355.github.io/Mr-Alternatives/item2</guid>
     </item>
 </channel>
 </rss>
-
