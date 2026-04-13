@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mr. Alternative - Behtareen Free Alternatives</title>
     
-    <!-- Adsterra Popunder Script (Verified Placement) -->
+    <link rel="alternate" type="application/rss+xml" title="Mr. Alternative RSS Feed" href="https://jack-tech9355.github.io/Mr-Alternatives/rss.xml" />
+    
     <script type='text/javascript' src='https://pl29103843.profitablecpmratenetwork.com/5b/ef/f1/5beff1488f233d527bf831b041960dd6.js'></script>
     
-    <!-- Google Fonts & Styling -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -39,34 +39,28 @@
 
     <main class="container mx-auto px-4 py-8 min-h-[70vh]">
         
-        <!-- Loading State -->
         <div id="loading-spinner" class="flex flex-col items-center justify-center py-24">
             <div class="loader mb-4"></div>
             <p class="text-slate-500 font-medium">Behtareen alternatives load ho rahe hain...</p>
         </div>
 
-        <!-- Home View -->
         <div id="home-view" style="display:none;">
             <div class="max-w-4xl mb-12">
                 <h2 class="text-3xl font-extrabold text-slate-900 mb-3">Popular Alternatives</h2>
                 <p class="text-slate-500 text-lg">Mehnge apps ko chhodiye, aur in muft options ko apnaiye।</p>
             </div>
             <div id="posts-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Posts will appear here -->
-            </div>
+                </div>
         </div>
 
-        <!-- Post Detail View -->
         <div id="post-detail-view" class="max-w-3xl mx-auto">
             <button onclick="showHome()" class="mb-8 text-blue-600 font-bold flex items-center hover:text-blue-800 transition">
                 <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
                 Wapas Home par
             </button>
             <article id="post-content" class="bg-white p-6 md:p-12 rounded-3xl shadow-sm border border-slate-100">
-                <!-- Dynamic Content -->
-            </article>
+                </article>
             
-            <!-- Direct Link Button for Adsterra Income -->
             <div class="mt-10 p-8 bg-gradient-to-br from-blue-600 to-blue-700 rounded-3xl text-center text-white shadow-xl">
                 <h3 class="text-2xl font-bold mb-3">Download Full Collection?</h3>
                 <p class="opacity-90 mb-8">Saare alternatives ek sath download karne ke liye niche link par click karein।</p>
@@ -93,7 +87,6 @@
         import { getAuth, signInAnonymously } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
         import { getFirestore, collection, onSnapshot } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
-        // Your Corrected Config
         const firebaseConfig = {
           apiKey: "AIzaSyABjYndZaTwYmhoYXpSMCu6OFIFIXT3gac",
           authDomain: "mr-alternative-367d4.firebaseapp.com",
@@ -110,7 +103,6 @@
 
         async function startApp() {
             try {
-                // IMPORTANT: Go to Firebase Console -> Authentication -> Enable Anonymous
                 await signInAnonymously(auth);
                 loadContent();
             } catch (err) {
@@ -136,7 +128,7 @@
                 if (snapshot.empty) {
                     container.innerHTML = `
                         <div class="col-span-full py-16 text-center">
-                            <div class="text-slate-300 mb-4"><svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"></path></svg></div>
+                            <div class="text-slate-300 mb-4"><svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2 2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"></path></svg></div>
                             <p class="text-slate-400 font-medium">Koi post nahi mili. Admin app se pehli post karein!</p>
                         </div>
                     `;
